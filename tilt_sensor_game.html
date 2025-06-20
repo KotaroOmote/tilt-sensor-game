@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>スマホ傾きボールゲーム</title>
+  <title>スマホ傾きボールゲーム!</title>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; background:#fafafa; margin:0; padding:0; }
     canvas { border:2px solid #333; background:#fff; display:block; margin:20px auto; }
@@ -18,21 +18,20 @@
 
   <h2>使用したセンサーと目的</h2>
   <p>
-    このWebページでは、スマートフォンの <strong>加速度・角速度センサー</strong> を利用するために
-    <code>DeviceOrientationEvent</code> API を使用しています。<br>
+    <strong>このWebページでは、スマートフォンの 加速度・角速度センサーを利用するために
+    <code>DeviceOrientationEvent</code> API を使用しています。<strong><br>
     スマホの傾きを検出し、その値（<code>beta</code>: 前後の傾き、<code>gamma</code>: 左右の傾き）
     に応じて青いボールを移動させます。<br>
     プレイヤーはスマホを傾けながらボールを操作し、障害物を避けて赤いゴールに入れることで
     ポイントを獲得します。<br>
-    これにより、人間の動作（デバイスの傾き）をリアルタイムにセンシングし、
-    インタラクティブな体験を実現しています。<br>
+    これにより、人間の動作（デバイスの傾き）をリアルタイムにセンシングしています。<br>
     API 詳細: <a href="https://developer.mozilla.org/ja/docs/Web/API/DeviceOrientationEvent" target="_blank">MDN Web Docs</a>
   </p>
 
   <div id="ui">
     <p>スマホを傾けて <span style="color:blue">青いボール</span> を
       <span style="color:red">赤いゴール</span> に導こう。<br>
-      制限時間 <b id="time">45</b> 秒内にできるだけ多くのゴールを目指せ！<br>
+      制限時間 <b id="time">60</b> 秒内にできるだけ多くのゴールを目指せ！<br>
       障害物に当たると <span style="color:red">-1 秒</span> ペナルティ。</p>
     <button id="startBtn">スタート</button>
     <div>スコア: <span id="score">0</span> ／ ハイスコア: <span id="best">0</span></div>
